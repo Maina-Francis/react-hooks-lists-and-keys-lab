@@ -7,9 +7,10 @@ function ProjectList({ projects }) {
   const myProjects = projects.map((activities) => {
     return (
       <ProjectItem
-        id={activities.id}
+        key={activities.id}
         name={activities.name}
         about={activities.about}
+        technologies={activities.technologies}
       />
     );
   });
